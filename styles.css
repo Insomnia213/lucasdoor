@@ -11,6 +11,7 @@
     --fg:#FAFAFA;
     --muted:#8A8A8A;
     --accent:#F4B740;
+    --disclamer:#343434;
 }
 
 html,
@@ -91,7 +92,17 @@ h1 span{
 .em{
     color:var(--accent);
 }
+.dis{
+    font-size: 12px;
+    
+    line-height: 1.5;
 
+    color: var(--disclamer);
+
+    max-width: 32ch;
+
+    margin-top: 40px;
+}
 .sub{
     font-size:16px;
 
