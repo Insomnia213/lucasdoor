@@ -43,6 +43,22 @@
     >
 
     <link rel="stylesheet" href="styles.css">
+    
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script', 'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '2236279507152321');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2236279507152321&ev=PageView&noscript=1"/>
+    </noscript>
+
 </head>
 
 <body>
@@ -69,6 +85,7 @@
     </p>
 
     <a
+        id="telegram-link"
         class="cta"
         href="https://t.me/+tyNEBRll7vQ3NTI6"
         target="_blank"
@@ -145,6 +162,14 @@
 </div>
 
 <script src="script.js"></script>
+
+<script>
+    const telegramLink = document.getElementById("telegram-link");
+
+    telegramLink?.addEventListener("click", () => {
+        fbq("track", "Contact");
+    });
+</script>
 
 </body>
 </html>
